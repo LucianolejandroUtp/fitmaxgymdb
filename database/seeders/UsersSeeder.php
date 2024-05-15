@@ -33,9 +33,9 @@ class UsersSeeder extends Seeder
                 // 'password' => bcrypt('12345678'),
 
                 'fecha_nacimiento' => '1990-01-01',
-                'estado' => 'activo',
-                'created_at' => now(),
-                'updated_at' => now(),
+                //'estado' => 'activo',
+                // 'created_at' => now(),
+                // 'updated_at' => now(),
                 'roles_id' => $roles_id,
                 'distritos_id' => $distritos_id,
             ]);

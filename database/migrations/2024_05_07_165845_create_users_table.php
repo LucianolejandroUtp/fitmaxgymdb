@@ -29,7 +29,7 @@ return new class extends Migration
             $table->dateTime('fecha_nacimiento')->nullable();
             $table->enum('estado', ['ACTIVO', 'INACTIVO', 'ELIMINADO'])->default('ACTIVO');
             $table->timestamp('created_at')->useCurrent();
-            $table->timestamp('updated_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate()->nullable();
             // $table->timestamps();
 
             $table->unsignedBigInteger('roles_id')->nullable();
