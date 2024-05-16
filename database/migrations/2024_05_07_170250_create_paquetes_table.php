@@ -16,7 +16,7 @@ return new class extends Migration
             $table->uuid('unique_id')->unique();
             $table->string('nombre');
             $table->string('descripcion')->nullable();
-            $table->decimal('precio', 8, 2);
+            $table->integer('precio');
             $table->integer('duracion');
             $table->enum('estado', ['ACTIVO', 'INACTIVO','ELIMINADO'])->default('ACTIVO');
             $table->timestamp('created_at')->useCurrent();
